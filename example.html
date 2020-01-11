@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<title>test</title>
+<script>
+function test(){
+    // window.open("test://?id=2")
+    location.href="http://github.com/ErolC/AppLinkExample"
+    // location.href="test://?id=10"
+    //  window.open("erolc://www.erolc.com")
+}
+</script>
+</head>
+<body>
+    <a href="erolc://test">这是一个测试网页</a>
+
+    <h1 onclick="test()">打开app</h1>
+   
+    <a href="intent://erolc.github.io/applink#Intent;scheme=http;category=android.intent.category.DEFAULT;category=android.intent.category.BROWSABLE;end"> 打开应用 </a>
+</body>
