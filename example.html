@@ -3,19 +3,16 @@
 <title>test</title>
 <script>
 function test(){
-    // window.open("test://?id=2")
     location.href="https://erolc.github.io/applink"
-    // location.href="test://?id=10"
-    //  window.open("erolc://www.erolc.com")
 }
 </script>
 </head>
 <body>
-    <a href="erolc://test">这是一个测试网页</a>
+    <a href="erolc://applink">自定义scheme</a>
 
-    <h1 onclick="test()">打开app</h1>
+    <h1 onclick="test()">http scheme</h1>
    
-    <a href="intent://erolc.github.io/applink#Intent;scheme=https;end"> 打开应用 </a>
+    <a href="intent://erolc.github.io/applink#Intent;scheme=https;end"> Intent scheme </a>
     <iframe src="https://erolc.github.io/applink" style="display:none">app</iframe> 
     <iframe src="intent://erolc.github.io/applink#Intent;scheme=https;end" style="display:none">web app</iframe> 
     <h3>end</h3>
