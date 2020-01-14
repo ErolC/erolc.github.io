@@ -5,15 +5,18 @@
 function test(){
     location.href="https://erolc.github.io/applink"
 }
+ function test1(){
+    location.href="https://erolc.github.io/link"
+}
 </script>
 </head>
 <body>
-    <a href="erolc://">自定义scheme</a>
+    <a href="erolc://erolc.github.io/link">自定义scheme</a>
 
     <h1 onclick="test()">http scheme</h1>
+    <h1 onclick="test1()">http scheme(不完整的appLink)</h1>
    
     <a href="intent://erolc.github.io/applink#Intent;scheme=https;end"> Intent scheme </a>
-    <iframe src="https://erolc.github.io/applink" style="display:none">app</iframe> 
-    <iframe src="intent://erolc.github.io/applink#Intent;scheme=https;end" style="display:none">web app</iframe> 
+   <a href="intent://erolc.github.io/link#Intent;scheme=https;end"> Intent scheme （不完整的appLink）</a>
     <h3>end</h3>
 </body>
